@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <nav class="navbar navbar-light bg-white">
+            <div class="container-fluid justify-content-center">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/logo.png" alt="" class="d-inline-block align-text-top">
+                    <b class="fs-2 ms-2">ETHEREUM WALLET</b>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Main body section -->
+    <section class="container">
+        <div class="row justify-content-between">
+            <!-- Body image -->
+            <div class="col-md-5 col-12">
+                <img src="images/pexels-morthy-jameson-9588217.jpg" class="rounded img-fluid" alt="">
+            </div>
+            <!-- Body calculation section -->
+            <div class="col-md-6 col-12 bg-light rounded text-center">
+                <!-- Income -->
+                <h4>Income</h4>
+                <label for="income">Income</label>
+                <input type="text" placeholder="0" id="income"> <br>
+
+                <!-- Expenses -->
+                <h4>Expenses</h4>
+                <label for="food">Food</label>
+                <input type="text" placeholder="0" id="food"> <br>
+                <label for="rent">Rent</label>
+                <input type="text" placeholder="0" id="rent"> <br>
+                <label for="clothes">Clothes</label>
+                <input type="text" placeholder="0" id="cloth"> <br>
+                <button class="btn btn-primary" id="calculateBtn">Calculate</button>
+
+                <!-- Total expense & balance -->
+                <h5>Total Expense: <span id="totalExpenses">00</span></h5>
+                <h5>Balance: <span id="balance">00</span></h5>
+
+                <!-- Save -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <label for="Save">Save</label>
+                    <input type="text" placeholder="0" id="save">
+                    <p class="my-0">%</p>
+                    <button class="btn btn-primary d-inline" id="saveBtn">Save</button>
+                </div>
+
+                <!-- Saving & Remaining -->
+                <h5>Saving Amount: <span id="savingAmount">00</span></h5>
+                <h5>Remaining Balance: <span id="remainingBalance">00</span></h5>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
