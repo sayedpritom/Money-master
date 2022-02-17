@@ -12,6 +12,7 @@ label {
     width: 80px;
     margin: 0;
     text-align: left;
+    word-break: break-all;
 }
 
 label {
@@ -19,7 +20,8 @@ label {
 }
 
 button {
-    width: 200px;
+    width: 40%;
+    max-width: 200px;
 }
 
 /* image size */
