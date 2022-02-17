@@ -31,11 +31,11 @@
                 <img src="images/pexels-morthy-jameson-9588217.jpg" class="rounded img-fluid" alt="">
             </div>
             <!-- Body calculation section -->
-            <div class="col-md-6 col-12 bg-light rounded text-center">
+            <div id="calculation-section" class="col-md-6 col-12 bg-light rounded text-center">
                 <!-- Income -->
                 <h4>Income</h4>
                 <label for="income">Income</label>
-                <input type="text" placeholder="0" id="income"> <br>
+                <input type="text" placeholder="0" id="income" type="number" min="5" max="10" step="1"> <br>
 
                 <!-- Expenses -->
                 <h4>Expenses</h4>
@@ -62,6 +62,8 @@
                 <!-- Saving & Remaining -->
                 <h5>Saving Amount: <span id="savingAmount">00</span></h5>
                 <h5>Remaining Balance: <span id="remainingBalance">00</span></h5>
+                <br>
+                <p><b id="errorMessage"></b></p>
             </div>
         </div>
     </section>
