@@ -48,7 +48,7 @@ document.getElementById('calculation-section').addEventListener('click', (e) => 
             try {
                 // number & positive number Validation
                 const inputValue = e.target.value;
-                if (isNaN(inputValue)) throw "Your input in " + input.id + " is not a number. Please enter a valid number input";
+                if (isNaN(inputValue)) throw "Your input in " + input.id + " field  is not a number. Please enter a valid number";
                 if (inputValue < 0) throw "Please enter a positive number in " + input.id;
 
                 // setting the values after validation

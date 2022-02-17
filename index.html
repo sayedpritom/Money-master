@@ -14,9 +14,9 @@
 <body>
     <!-- Header section -->
     <header>
-        <nav class="navbar navbar-light bg-white">
-            <div class="container-fluid justify-content-center">
-                <a class="navbar-brand d-flex align-items-center" href="#">
+        <nav class="navbar navbar-light bg-white mb-5">
+            <div class="container-fluid justify-content-center word-break">
+                <a class="navbar-brand d-flex align-items-center flex-wrap text-wrap" href="#">
                     <img src="images/logo.png" alt="" class="d-inline-block align-text-top">
                     <b class="fs-2 ms-2">ETHEREUM WALLET</b>
                 </a>
@@ -24,46 +24,50 @@
         </nav>
     </header>
     <!-- Main body section -->
-    <section class="container">
+    <section class="container text-wrap my-5">
         <div class="row justify-content-between">
             <!-- Body image -->
             <div class="col-md-5 col-12">
-                <img src="images/pexels-morthy-jameson-9588217.jpg" class="rounded img-fluid" alt="">
+                <div id="image-container">
+                    <img src="images/pexels-morthy-jameson-9588217.jpg" alt="">
+                </div>
             </div>
             <!-- Body calculation section -->
-            <div id="calculation-section" class="col-md-6 col-12 bg-light rounded text-center">
+            <div id="calculation-section" class="col-md-6 col-12 bg-light rounded-5 shadow-lg text-center my-5 my-md-0 p-4">
                 <!-- Income -->
                 <h4>Income</h4>
                 <label for="income">Income</label>
                 <input type="text" placeholder="0" id="income" type="number" min="5" max="10" step="1"> <br>
 
                 <!-- Expenses -->
-                <h4>Expenses</h4>
+                <h4 class="mt-4">Expenses</h4>
                 <label for="food">Food</label>
-                <input type="text" placeholder="0" id="food"> <br>
+                <input type="text" placeholder="0" id="food"> <br><br>
                 <label for="rent">Rent</label>
-                <input type="text" placeholder="0" id="rent"> <br>
-                <label for="clothes">Clothes</label>
-                <input type="text" placeholder="0" id="cloth"> <br>
-                <button class="btn btn-primary" id="calculateBtn">Calculate</button>
+                <input type="text" placeholder="0" id="rent"> <br><br>
+                <label for="clothes">Cloth</label>
+                <input type="text" placeholder="0" id="cloth"> <br><br>
+                <button class="" id="calculateBtn">Calculate</button>
+
+                <!-- Error Message -->
+                <p><b id="errorMessage"></b></p>
 
                 <!-- Total expense & balance -->
-                <h5>Total Expense: <span id="totalExpenses">00</span></h5>
-                <h5>Balance: <span id="balance">00</span></h5>
+                <h5>Total Expense: <span id="totalExpenses">0</span></h5>
+                <h5>Balance: <span id="balance">0</span></h5>
 
                 <!-- Save -->
-                <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center flex-wrap">
                     <label for="Save">Save</label>
                     <input type="text" placeholder="0" id="save">
-                    <p class="my-0">%</p>
-                    <button class="btn btn-primary d-inline" id="saveBtn">Save</button>
+                    <p class="my-0 p-2">%</p>
+                    <button class="" id="saveBtn">Save</button>
                 </div>
-
+                
                 <!-- Saving & Remaining -->
-                <h5>Saving Amount: <span id="savingAmount">00</span></h5>
-                <h5>Remaining Balance: <span id="remainingBalance">00</span></h5>
+                <h5>Saving Amount: <span id="savingAmount">0</span></h5>
+                <h5>Remaining Balance: <span id="remainingBalance">0</span></h5>
                 <br>
-                <p><b id="errorMessage"></b></p>
             </div>
         </div>
     </section>
